@@ -24,8 +24,8 @@ tags:
     - attack.external_remote_services
     - attack.t1133
 logsource:
-  product: windows
-  category: security
+  product: cisco
+  category: audit
 detection:
   failed_login:
     EventID: '4625'
