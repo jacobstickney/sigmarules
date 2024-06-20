@@ -18,6 +18,8 @@ tags:
     - attack.ta0004
     - attack.valid_accounts
     - attack.t1078
+    - attack.external_remote_services
+    - attack.t1133
 logsource:
   product: cisco
   service: vpn # Will need to further specify the SIEM index name per your environment
