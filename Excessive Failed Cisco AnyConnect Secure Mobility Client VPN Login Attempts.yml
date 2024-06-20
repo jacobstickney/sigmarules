@@ -31,6 +31,7 @@ detection:
     EventID: '4625'
     timeframe: 10m
     ResultDescription: 'An account failed to log on.'
+    threshold: 3
   condition: failed_login
 falsepositives:
   - A legitimate user entering incorrect credentials by mistake
