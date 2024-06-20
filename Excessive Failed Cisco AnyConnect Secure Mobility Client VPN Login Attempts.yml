@@ -33,6 +33,7 @@ detection:
     ResultDescription: 'An account failed to log on.'
     threshold: 3
   condition: failed_login
+  condition: 'failed_login | stats count by EventID | where count > 2'
 falsepositives:
   - A legitimate user entering incorrect credentials by mistake
 level: high
