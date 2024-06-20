@@ -2,7 +2,7 @@
 
 SIGMA rules are valuable in detection engineering as they provide a generic, open standard for defining security detection rules in a structured and scalable manner. They allow for the creation of rules that can be shared across different systems, reducing the effort required to create custom rules for each system. This promotes consistency in detection and improves the overall efficiency of the security operations center (SOC). Furthermore, by using SIGMA, organizations can leverage the collective wisdom of the security community, benefiting from rules created by others who have encountered similar threats.
 
-Leveraging existing SIGMA rules prior to creating your own can often offer the highest return on investment for a couple key reasons:
+Leveraging existing SIGMA rules prior to creating your own may often offer the highest return on investment for a couple key reasons:
 
 - These rules are already well-documented, facilitating easy reference and knowledge sharing. This means less time spent on documentation and more time on actual threat detection.
 - Existing SIGMA rules make use of available data sources which can save considerable time and effort in data collection.
