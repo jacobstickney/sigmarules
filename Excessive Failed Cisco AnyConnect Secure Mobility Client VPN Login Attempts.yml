@@ -20,7 +20,7 @@ tags:
     - attack.t1078
 logsource:
   product: cisco
-  service: vpn
+  service: vpn # Will need to further specify the SIEM index name per your environment
 detection:
   failed_login:
     EventID: '4625'
