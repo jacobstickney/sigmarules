@@ -25,7 +25,7 @@ tags:
     - attack.t1133
 logsource:
   product: windows
-  service: security
+  category: security
 detection:
   failed_login:
     EventID: '4625'
