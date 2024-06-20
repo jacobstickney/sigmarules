@@ -25,9 +25,9 @@ logsource:
   service: vpn
 detection:
   failed_login:
-    - selection:
+    selection:
       EventID: '4625'
-    condition: failed_login > 3 in 10m
+    condition: failed_login > 3 in 1h
 falsepositives:
   - A legitimate user entering incorrect credentials by mistake
 level: high
