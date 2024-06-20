@@ -1,7 +1,7 @@
 title: Excessive Failed Cisco AnyConnect Secure Mobility Client VPN Login Attempts
 id: 12345678-9abc-def0-1234-56789abcdef0
 status: experimental
-description: Detects more than 3 failed login attempts on Cisco AnyConnect Secure Mobility Client. Adversaries may leverage external-facing remote services to initially access and/or persist within a network. Remote services such as VPNs, Citrix, and other access mechanisms allow users to connect to internal enterprise network resources from external locations.
+description: Detects more than excessive failed login attempts on Cisco AnyConnect Secure Mobility Client. Adversaries may leverage external-facing remote services to initially access and/or persist within a network. Remote services such as VPNs, Citrix, and other access mechanisms allow users to connect to internal enterprise network resources from external locations.
 references: 
     - https://www.cisco.com/c/en/us/support/security/anyconnect-secure-mobility-client/series.html
     - https://attack.mitre.org/techniques/T1133/
