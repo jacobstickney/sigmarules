@@ -1,0 +1,33 @@
+title: Excessive Failed Cisco AnyConnect Secure Mobility Client VPN Login Attempts
+id: 12345678-9abc-def0-1234-56789abcdef0
+status: experimental
+description: Detects more than 3 failed login attempts on Cisco AnyConnect Secure Mobility Client
+references:
+    - https://www.cisco.com/c/en/us/support/security/anyconnect-secure-mobility-client/series.html
+author: Jacob Stickney
+date: 2024/06/20
+modified: 2024/06/20
+tags:
+    -attack.initial_access
+    -attack.ta0001
+    -attack.lateral_movement
+    -attack.ta0008
+    -attack.defense_evasion
+    -attack.ta0005
+    -attack.persistence
+    -attack.ta0003
+    -attack.privilege_escalation
+    -attack.ta0004
+    -attack.valid_accounts
+    -attack.t1078
+logsource:
+  product: cisco
+  service: vpn
+detection:
+  failed_login:
+    - selection:
+      EventID: '4625'
+    condition: failed_login > 3 in 10m
+falsepositives:
+  - A legitimate user entering incorrect credentials by mistake
+level: high
